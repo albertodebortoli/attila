@@ -1,10 +1,11 @@
 {
   "name": "attila",
   "description": "Ghost Theme",
-  "demo": "http://attila.zutrinken.com",
-  "version": "1.7.6",
+  "demo": "https://attila.zutrinken.com",
+  "version": "1.18.0",
   "engines": {
-    "ghost": ">=2.1.0"
+    "ghost": ">=2.1.0",
+    "ghost-api": "v2"
   },
   "license": "MIT",
   "screenshots": {
@@ -14,7 +15,7 @@
   "author": {
     "name": "Peter Amende",
     "email": "xoxo@zutrinken.com",
-    "url": "http://zutrinken.com"
+    "url": "https://zutrinken.com"
   },
   "gpm": {
     "type": "theme",
@@ -34,17 +35,34 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.4",
     "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-compress": "^1.6.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-uglify": "^3.3.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-postcss": "^0.9.0",
     "grunt-sass": "^2.1.0",
-    "grunt-zip": "^0.18.1",
     "load-grunt-tasks": "^3.5.2"
   },
   "config": {
-    "posts_per_page": 10
-  }
+    "posts_per_page": 10,
+    "image_sizes": {
+      "s": {
+        "width": 320
+      },
+      "m": {
+        "width": 640
+      },
+      "l": {
+        "width": 960
+      },
+      "xl": {
+        "width": 1920
+      }
+    }
+  },
+  "browserslist": [
+    "defaults"
+  ]
 }
